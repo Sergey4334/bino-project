@@ -74,17 +74,13 @@ a {
     }
   }
 }
-@media (min-width: 768px) {
-  .header {
-    &__inner {
-      min-height: 120px;
-    }
-  }
-}
 
 @media (min-width: 1024px) {
   .header {
-    background-color: transparent;
+    background: none;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
   }
 }
 //* Header End
@@ -168,6 +164,7 @@ a {
 @media (min-width: 1366px) {
   .head {
     min-height: 690px;
+    padding-top: 150px;
   } 
 }
 @media (min-width: 1440px) {
@@ -296,6 +293,7 @@ a {
   width: 100px;
   height: 40px;
   color: #fff;
+  cursor: pointer;
   border: none;
   text-transform: uppercase;
   border-radius: 3px;
@@ -323,6 +321,7 @@ a {
   width: 100px;
   height: 40px;
   color: #fff;
+  cursor: pointer;
   border: none;
   text-transform: uppercase;
   border-radius: 3px;
