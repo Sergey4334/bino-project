@@ -18,6 +18,16 @@ $(function(){
         }
       },
       {
+        breakpoint: 1020,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: false,
+          dots: true
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           dots: true,

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAqGA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAClC,AAAA,OAAO,CAAC;IACN,OAAO,EAAE,IAAI;GACd;EACD,AAAA,aAAa,CAAC;IACZ,OAAO,EAAE,IAAI;GACd;;;AAGH,sBAAsB",
+    "sources": [
+        "../scss/menu-icon.scss"
+    ],
+    "names": [],
+    "file": "menu-icon.css"
+}

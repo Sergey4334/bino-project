@@ -1,0 +1,11 @@
+@media screen and (min-width: 1024px) {
+  .burger {
+    display: none;
+  }
+  .burger-check {
+    display: none;
+  }
+}
+
+/* End Burgers menu */
+/*# sourceMappingURL=menu-icon.css.map */
