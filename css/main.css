@@ -386,6 +386,13 @@ a {
   }
 }
 
+@media (min-width: 1919px) {
+  .head {
+    min-height: 985px;
+    padding-top: 240px;
+  }
+}
+
 .top-slider {
   text-align: center;
 }
@@ -420,6 +427,12 @@ a {
   }
 }
 
+@media (min-width: 1919px) {
+  .top-slider__welcome {
+    padding: 40px 0px;
+  }
+}
+
 .top-slider__text {
   color: #cbc6c0;
   font-size: 14px;
@@ -445,6 +458,12 @@ a {
 @media (min-width: 1366px) {
   .top-slider__text {
     max-width: 740px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .top-slider__text {
+    padding-bottom: 80px;
   }
 }
 
@@ -985,12 +1004,7 @@ a {
 }
 
 .color-gray {
-  color: #999;
   font-weight: 600;
-}
-
-.gray-bg {
-  background-color: #6a6a6a;
 }
 
 .orange-bg {
@@ -1025,6 +1039,7 @@ a {
 
 .block-price__main {
   font-size: 35px;
+  color: #999;
   letter-spacing: 2px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -1039,6 +1054,26 @@ a {
   max-width: 290px;
   width: 100%;
   padding: 10px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pricing-item:hover {
+  cursor: pointer;
+}
+
+.pricing-item:hover .title-plan {
+  background-color: #e74c3c;
+}
+
+.pricing-item:hover .block-price__main {
+  color: #e74c3c;
+}
+
+.pricing-item:hover .choouse-btn {
+  background-color: #e74c3c;
+  -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -1051,6 +1086,10 @@ a {
   .pricing-item {
     max-width: 380px;
   }
+}
+
+.title-plan {
+  background-color: #6a6a6a;
 }
 
 .choouse-plan {
@@ -1077,32 +1116,6 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-top: 40px;
-  -webkit-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-}
-
-.choouse-btn:hover {
-  background-color: #e74c3c;
-}
-
-.choouse-btn-accent {
-  width: 145px;
-  height: 45px;
-  cursor: pointer;
-  background-color: #e74c3c;
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 2px;
-  margin-top: 40px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-}
-
-.choouse-btn-accent:hover {
-  background-color: #f26f62;
 }
 
 .white {

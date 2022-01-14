@@ -223,6 +223,12 @@ a {
     min-height: 735px;
   } 
 }
+@media (min-width: 1919px) {
+  .head {
+    min-height: 985px;
+    padding-top: 240px;
+  } 
+}
 .top-slider {
   text-align: center; 
   &__title {
@@ -251,6 +257,11 @@ a {
       line-height: 70px;
     } 
   }
+  @media (min-width: 1919px) {
+    &__welcome  {
+      padding: 40px 0px;
+    } 
+  }
   &__text  {
     color: #cbc6c0;
     font-size: 14px;
@@ -273,6 +284,11 @@ a {
   @media (min-width: 1366px) {
     &__text {
       max-width: 740px; 
+    } 
+  }
+  @media (min-width: 1919px) {
+    &__text  {
+      padding-bottom: 80px;
     } 
   }
 }
@@ -744,12 +760,9 @@ a {
   font-weight: 700;
 }
 .color-gray {
-  color: #999;
   font-weight: 600;
 }
-.gray-bg {
-  background-color: #6a6a6a;
-}
+
 .orange-bg {
   background-color: $accent;
 }
@@ -770,6 +783,7 @@ a {
   flex-direction: column;
   &__main {
     font-size: 35px;
+    color: #999;
     letter-spacing: 2px;
     font-family: 'Source Sans Pro', sans-serif;
   }
@@ -783,7 +797,24 @@ a {
   max-width: 290px;
   width: 100%;
   padding: 10px 15px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .title-plan {
+    background-color: $accent;
+  }
+  &:hover .block-price__main {
+    color: $accent;
+  }
+  &:hover .choouse-btn {
+    background-color: $accent;
+    -webkit-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px -1px rgba(34, 60, 80, 0.2);
+  }
 }
+
 @media (min-width: 768px) {
   .pricing-item {
     max-width: 320px;
@@ -793,6 +824,9 @@ a {
   .pricing-item {
     max-width: 380px;
   }
+}
+.title-plan {
+  background-color: #6a6a6a;
 }
 .choouse-plan {
   color: #999;
@@ -817,31 +851,8 @@ a {
   border-radius: 2px;
   transition: 0.3s;
   margin-top: 40px;
-  -webkit-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  -moz-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  &:hover {
-    background-color: $accent;
-  }
 }
-.choouse-btn-accent {
-  width: 145px;
-  height: 45px;
-  cursor: pointer;
-  background-color: $accent;
-  color: #fff;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 2px;
-  margin-top: 40px;
-  transition: 0.3s;
-  -webkit-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  -moz-box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  box-shadow: 0px 7px 7px 0px rgba(219, 220, 224, 0.6);
-  &:hover {
-    background-color: #f26f62;
-  }
-}
+
 .white {
   color: #fff;
 }
